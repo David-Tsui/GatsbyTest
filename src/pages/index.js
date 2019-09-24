@@ -51,8 +51,8 @@ function Index() {
       <h2>The date according to Node.js (TypeScript) is:</h2>
       <p>{date ? date : 'Loading date...'}</p>
       <span>count: {count}</span>
-      <button onClick={setCount(count + 1)}>+</button>
-      <button onClick={setCount(count - 1)}>-</button>
+      <button onClick={() => setCount(count + 1)}>+</button>
+      <button onClick={() => setCount(count - 1)}>-</button>
     </main>
   );
 }
